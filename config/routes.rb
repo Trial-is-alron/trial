@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   namespace :public do
     get 'members/new'
     get 'members/show'
